@@ -1,0 +1,24 @@
+{
+  "Button": {
+    "background": {
+      "primary": {
+        "value": "#1739ff",
+        "type": "color"
+      }
+    }
+  },
+  "Main": {
+    "value": "#1739ff",
+    "type": "color"
+  },
+  "tokenSetOrder": {
+    "0": {
+      "value": "Core",
+      "type": "other"
+    },
+    "1": {
+      "value": "Light",
+      "type": "other"
+    }
+  }
+}
