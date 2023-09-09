@@ -1,0 +1,98 @@
+@import '../app/scss/variables';
+
+button {
+    background-color: $button-background-primary;
+    color: white
+}
+/* Center the toolbar title */
+.toolbar {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toolbar-title {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Style for the vertical tabs */
+  .content {
+    display: flex;
+    align-items: stretch;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-direction: column; /* Display tabs vertically */
+    width: 200px; /* Adjust the width of the tab container */
+    background-color: #2c3e50;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab.active {
+    background-color: #3498db; /* Active tab background color */
+  }
+  
+  .tab:hover {
+    background-color: #34495e; /* Tab background color on hover */
+  }
+  
+  /* Style for the tab content */
+  .tab-content {
+    flex: 1;
+    padding-left: 20px; /* Add space between tabs and content */
+  }
+  
+  /* Style for the Colors tab */
+  .colors-tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .color-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 0 calc(33.3333% - 20px); /* Adjust the width based on your layout */
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .color-card:hover {
+    transform: scale(1.05); /* Enlarge card on hover */
+  }
+  
+  .color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .color-info {
+    flex: 1;
+  }
+  
+  .color-name {
+    font-weight: bold;
+  }
+  
+  .color-hex {
+    color: #555;
+  }
+  
