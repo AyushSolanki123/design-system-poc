@@ -1,0 +1,14 @@
+@import "src/app/scss/_variables.scss";
+.custom-button {
+  background-color: $button-background-primary;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.custom-button:hover {
+  background-color: #1565c0;
+}

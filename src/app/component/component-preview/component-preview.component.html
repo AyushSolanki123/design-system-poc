@@ -1,0 +1,40 @@
+<div class="component-preview">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ title }} Preview</mat-card-title>
+      <div class="button-container">
+        <button mat-icon-button class="code-button" (click)="toggleCodeView()">
+          <mat-icon>code</mat-icon>
+        </button>
+      </div>
+    </mat-card-header>
+
+    <div class="preview-container">
+      <!-- Display the PreviewedComponent with a button -->
+      <app-previewed-component [isButton]="isButton"></app-previewed-component>
+    </div>
+
+    <div class="code-container" *ngIf="showCode">
+      <mat-tab-group class="code-tab-group">
+        <mat-tab label="HTML">
+          <div class="code-block">
+            <!-- Display HTML code -->
+            <pre><code>{{currentCode.html || ''}}</code></pre>
+          </div>
+        </mat-tab>
+        <mat-tab label="CSS">
+          <div class="code-block">
+            <!-- Display CSS code -->
+            <pre><code>{{currentCode.css || ''}}</code></pre>
+          </div>
+        </mat-tab>
+        <mat-tab label="TypeScript">
+          <div class="code-block">
+            <!-- Display TypeScript code -->
+            <pre><code>{{currentCode.ts || ''}}</code></pre>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </mat-card>
+</div>

@@ -15,6 +15,10 @@
     "value": "#4CAF50",
     "type": "color"
   },
+  "Red": {
+    "value": "#FF3B30",
+    "type": "color"
+  },
   "tokenSetOrder": {
     "0": {
       "value": "Core",

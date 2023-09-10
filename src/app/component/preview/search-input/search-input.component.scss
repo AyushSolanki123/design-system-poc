@@ -1,0 +1,36 @@
+/* Style the search container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: 400px; /* Adjust the width as needed */
+}
+
+/* Style the search icon */
+.search-icon {
+  position: absolute;
+  left: 10px; /* Adjust the left position as needed */
+  color: #ccc; /* Icon color */
+  cursor: pointer;
+}
+
+/* Style the search input field */
+.search-input {
+  border: none;
+  outline: none;
+  padding: 4px 30px 4px 25px; /* Adjust the padding as needed */
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Style the filter icon */
+.filter-icon {
+  position: absolute;
+  right: 10px; /* Adjust the right position as needed */
+  color: #ccc; /* Icon color */
+  cursor: pointer;
+}

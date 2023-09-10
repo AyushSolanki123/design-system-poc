@@ -1,0 +1,11 @@
+/* component-wrapper.component.css */
+
+.component-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.component-card {
+  margin: 10px;
+}

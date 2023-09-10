@@ -1,0 +1,82 @@
+/* component-preview.component.css */
+
+.component-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card {
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+mat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2196f3;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+mat-card-title {
+  font-size: 1.2rem;
+}
+
+/* Style the code icon button */
+.code-button {
+  background-color: transparent;
+  color: #000; /* Black color */
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.code-container {
+  padding: 16px;
+}
+
+.code-block {
+  max-height: 300px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #000 !important;
+  background-color: #f9f9f9;
+  padding: 16px;
+  white-space: pre-wrap;
+}
+
+/* Style tabs */
+.mat-tab-label {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.mat-tab-label-active {
+  background-color: #1565c0;
+}
+
+.code-tab-group {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+}

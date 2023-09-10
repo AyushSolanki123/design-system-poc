@@ -1,13 +1,15 @@
 {
-  "source": ["output.json"],
+  "source": ["src/assets/output.json"],
   "platforms": {
     "scss": {
       "transformGroup": "scss",
       "buildPath": "src/app/scss/",
-      "files": [{
-        "destination": "_variables.scss",
-        "format": "scss/variables"
-      }]
+      "files": [
+        {
+          "destination": "_variables.scss",
+          "format": "scss/variables"
+        }
+      ]
     }
   }
 }

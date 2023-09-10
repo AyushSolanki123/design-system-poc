@@ -4,9 +4,27 @@
 
 <div class="content">
   <div class="tabs">
-    <div class="tab" [class.active]="activeTab === 'colors'" (click)="showTab('colors')">Colors</div>
-    <div class="tab" [class.active]="activeTab === 'typography'" (click)="showTab('typography')">Typography</div>
-    <div class="tab" [class.active]="activeTab === 'components'" (click)="showTab('components')">Components</div>
+    <div
+      class="tab"
+      [class.active]="activeTab === 'colors'"
+      (click)="showTab('colors')"
+    >
+      Colors
+    </div>
+    <div
+      class="tab"
+      [class.active]="activeTab === 'typography'"
+      (click)="showTab('typography')"
+    >
+      Typography
+    </div>
+    <div
+      class="tab"
+      [class.active]="activeTab === 'components'"
+      (click)="showTab('components')"
+    >
+      Components
+    </div>
   </div>
 
   <div class="tab-content">
@@ -20,5 +38,8 @@
       </div>
     </div>
     <!-- Add content for other tabs here -->
+    <div *ngIf="activeTab === 'components'" class="colors-tab">
+      <app-component-wrapper></app-component-wrapper>
+    </div>
   </div>
 </div>
