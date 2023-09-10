@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "token-transformer tokens.json output.json && npx style-dictionary build && ng build",
+    "build": "token-transformer tokens.json src/assets/output.json && npx style-dictionary build && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

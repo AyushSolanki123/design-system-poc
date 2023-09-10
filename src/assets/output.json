@@ -7,8 +7,12 @@
       }
     }
   },
-  "Main": {
+  "Blue": {
     "value": "#1739ff",
+    "type": "color"
+  },
+  "Green": {
+    "value": "#4CAF50",
     "type": "color"
   },
   "tokenSetOrder": {
@@ -17,7 +21,7 @@
       "type": "other"
     },
     "1": {
-      "value": "Light",
+      "value": "Light Theme",
       "type": "other"
     }
   }

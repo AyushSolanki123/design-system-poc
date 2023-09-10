@@ -17,13 +17,44 @@ export class AppComponent  implements OnInit{
     // Add more colors as needed
   ];
 
+  cssVariables:any = {}
+  colorsList:any = []
+  nestedColors: any = []
+
   constructor(private readCssVariableService: ReadCssVariablesService) {}
 
   ngOnInit(): void {
-    this.readCssVariableService.getScssVariables().subscribe((data) => console.log(data))
+    this.readCssVariableService.getScssVariables().subscribe((data) => {
+      this.cssVariables = data; 
+      this.colorsList = this.extractColors(data)
+      this.nestedColors = this.colorsList.filter((color: any) => color.isNested)
+      this.colorsList = this.colorsList.filter((color: any) => !color.isNested)
+    })
   }
 
 
+  extractColors(obj:any, parentKey = "", isNested = false):any {
+    const colorObjects = [];
+  
+    for (const key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        const currentKey = parentKey ? `${parentKey}-${key}` : key;
+  
+        if (obj[key]?.type === "color") {
+          // If the property has a 'type' of 'color', extract it
+          colorObjects.push({
+            name: currentKey,
+            value: obj[key].value,
+            isNested: isNested
+          });
+        } else if (typeof obj[key] === "object") {
+          // If the current property is an object, recursively call the function
+          colorObjects.push(...this.extractColors(obj[key], currentKey, true));
+        } 
+      }
+    }
+    return colorObjects;
+  }
 
   showTab(tabName: string): void {
     this.activeTab = tabName;
